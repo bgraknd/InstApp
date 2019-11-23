@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "723353183431",
+    "firebase_url": "https://instaclonefb-e21e7.firebaseio.com",
+    "project_id": "instaclonefb-e21e7",
+    "storage_bucket": "instaclonefb-e21e7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:723353183431:android:8cc46954d3db94ec4d8ae2",
+        "android_client_info": {
+          "package_name": "com.bugrakandemir.instaclonefb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "723353183431-o88roh8bson9g11mv1edge1i26alg930.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAo2UvHodXaGUXdp6gaRGX45Nr5-1yxJtY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "723353183431-o88roh8bson9g11mv1edge1i26alg930.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
