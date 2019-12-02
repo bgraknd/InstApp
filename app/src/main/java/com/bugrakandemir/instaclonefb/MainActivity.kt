@@ -18,6 +18,13 @@ class MainActivity : AppCompatActivity() {
 
         auth = FirebaseAuth.getInstance()
 
+        val currentUser = auth.currentUser
+
+        if (currentUser != null) {
+            val intent = Intent(applicationContext, FeedActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
     }
 
     fun signInClicked(view: View) {
@@ -36,13 +43,12 @@ class MainActivity : AppCompatActivity() {
                     finish()
                 }
             }.addOnFailureListener { exception ->
-            Toast.makeText(
-                applicationContext,
-                exception.localizedMessage?.toString(),
-                Toast.LENGTH_LONG
-            ).show()
-        }
-
+                Toast.makeText(
+                    applicationContext,
+                    exception.localizedMessage?.toString(),
+                    Toast.LENGTH_LONG
+                ).show()
+            }
     }
 
     fun signUpClicked(view: View) {
@@ -60,13 +66,10 @@ class MainActivity : AppCompatActivity() {
             if (exception != null) {
                 Toast.makeText(
                     applicationContext,
-                    exception.localizedMessage.toString(),
+                    exception.localizedMessage?.toString(),
                     Toast.LENGTH_LONG
                 ).show()
             }
         }
-
     }
-
-
 }
